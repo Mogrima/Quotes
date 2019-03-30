@@ -75,10 +75,16 @@ gulp.task('copy:img', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('copy:fonts', function() {
+    return gulp.src('./src/fonts/**/*.*')
+    .pipe(gulp.dest('./dist/fonts/'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('default', function(callback) {
     runSequence(
         'clean:dist',
-        ['less', 'pug', 'copy:js', 'copy:img'],
+        ['less', 'pug', 'copy:js', 'copy:img', 'copy:fonts'],
         'serve',
         callback
     );
