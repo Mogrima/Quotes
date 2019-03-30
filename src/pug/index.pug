@@ -1,0 +1,203 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Quotes
+    link(rel='stylesheet', href='css/style.css')
+  body
+    header.page-header
+      .page-header__wrapper
+        a.page-header__logo(href='#') Quotes
+        nav.page-header__nav.main-nav
+          button.main-nav__toggle
+            span.visually-hidden Menu
+          ul.main-nav__list
+            li
+              a.main-nav__link(href='#') Home
+            li
+              a.main-nav__link(href='#') About us
+            li
+              a.main-nav__link(href='#') Categories
+            li
+              a.main-nav__link(href='#') Gallery
+            li
+              a.main-nav__link(href='#') Events
+            li
+              a.main-nav__link(href='#') Blog
+            li
+              a.main-nav__link(href='#') Contact us
+      .slider
+        ul.slider__list
+          li.slider__item
+            p
+              b Smile 
+              | it costs you nothing
+          //
+            <li class="slider__item">
+            <p><b>Smile </b>it costs you nothing</p>
+            </li>
+            <li class="slider__item">
+            <p><b>Smile </b>it costs you nothing</p>
+            </li>
+            <li class="slider__item">
+            <p><b>Smile </b>it costs you nothing</p>
+            </li>
+            <li class="slider__item">
+            <p><b>Smile </b>it costs you nothing</p>
+            </li>
+    main.page-main
+      .page-title
+        h1
+          | The most inclusive 
+          b Free PSD Template
+        p
+          | Free for commercial and personal use. You can easily edit
+          | its contents and code it for yourself or your client!
+      p.page-main__description
+        | Lorem ipsum dolor sit amet,
+        | consectetur adipiscing elit. Donec eget nisi eget tortor
+        | iaculis tristique. Aliquam tincidunt posuere tortor hendrerit
+        | elementum. Nunc laoreet lorem a sem auctor fringilla.
+        | Pellentesque dignissim accumsan lobortis. Sed pharetra erat
+        | vitae dui imperdiet quis commodo orci dapibus.
+      p.page-main__description
+        | Cum sociis natoque penatibus
+        | et magnis dis parturient montes, nascetur ridiculus mus.
+        | Fusce at nunc libero. Nam metus lorem, rhoncus ac mattis
+        | ornare, blandit vel risus.
+      section.reasons
+        h2.section-title Reasons to be happy
+        ul.reasons__list
+          li.reasons__item
+            h3.reasons__subtitle you are alive
+            blockquote.reasons__quotes
+              | Waking up to see
+              | another day is a blessing. Don't take it for granted.
+              | Make it count and be happy that you're alive.
+            span.reasons__quotes-author Anonymous
+          li.reasons__item
+            h3.reasons__subtitle someone loves you
+            blockquote.reasons__quotes
+              | Someone who really
+              | loves you sees what a mess you can be, how moody you can
+              | get, how hard you are to handle, but still wants you in
+              | their life.
+            span.reasons__quotes-author Anonymous
+          li.reasons__item
+            h3.reasons__subtitle Enjoy the moment
+            blockquote.reasons__quotes
+              | Sometimes you will
+              | never know the true value of a moment until it becomes
+              | a memory.
+            span.reasons__quotes-author Anonymous
+          li.reasons__item
+            h3.reasons__subtitle health is wealth
+            blockquote.reasons__quotes
+              | It is health that is real wealth and not
+              | pieces of gold and silver.
+            span.reasons__quotes-author Mahatma Gandhi
+        a.button(href='#') More reasons
+      section.quote
+        h2.visually-hidden Quote of the day
+        blockquote.quote__block
+          p.quote__text
+            | I love you for all that you are, all that you have been,
+            | and all you're yet to be.
+          cite.quote__source Quote of the day, from Love Quotes
+      section.prints
+        h2.section-title Buy Poster Prints
+        ul.prints__list
+          li.prints__item
+            p.prints__slogan
+              | Stay
+              | True,
+              | Stay
+              | gentleman
+            img.prints__poster(src='', alt='poster 1', width='560', height='760')
+          li.prints__item
+            p.prints__slogan And muse of nature with a poet’s eye
+            span.prints__author Thomas Campbell
+            img.prints__poster(src='', alt='poster 2', width='740', height='372')
+          li.prints__item
+            p.prints__slogan Make Work Fun & Play
+            img.prints__poster(src='', alt='poster 3', width='330', height='340')
+          li.prints__item
+            p.prints__slogan Silence is Golden
+            img.prints__poster(src='', alt='poster 4', width='330', height='340')
+        a.button(href='#') browse posters
+    footer.footer
+      .footer__top
+        section.browse
+          h4.footer__title Browse
+          ul.footer__menu-list
+            li
+              a.footer__menu-link(href='#') Home
+            li
+              a.footer__menu-link(href='#') About us
+            li
+              a.footer__menu-link(href='#') Categories
+            li
+              a.footer__menu-link(href='#') Info
+            li
+              a.footer__menu-link(href='#') Services
+        section.shop
+          h4.footer__title Shop
+          ul.footer__menu-list
+            li
+              a.footer__menu-link(href='#') Account
+            li
+              a.footer__menu-link(href='#') Help & Guide
+            li
+              a.footer__menu-link(href='#') Shipping & Returns
+            li
+              a.footer__menu-link(href='#') FAQs
+        section.contact
+          h4.footer__title Contact
+          address.contact__block
+            p.contact__address
+              | Quotes PSD Template
+              | Rudra Street, 12354 Villa
+              | My State - My Country
+              | 987658
+            p.contact__item
+              | Phone: 
+              a(href='tel:+01234567890') + 01 234 567 890
+            p.contact__item Fax: + 01 234 567 890
+            p.contact__item
+              a(href='mailto:graphicsfuel@gmail.com') graphicsfuel@gmail.com
+        section.subscribe
+          h4.footer__title Subscribe now
+          p Get our latest news and product updates daily
+          form(action='#', method='POST')
+            label.visually-hidden(for='email') Email Address
+            input#email(type='email', placeholder='Email Address')
+            button.button(type='submit') Submit
+      .footer__bottom
+        p.footer__copyright 2016 © Copyright - Quotes PSD Templates. All rights reserved.
+        ul.footer__social.social
+          li
+            a.social__button(href='#')
+              span.visually-hidden Facebook
+          li
+            a.social__button(href='#')
+              span.visually-hidden Twitter
+          li
+            a.social__button(href='#')
+              span.visually-hidden Linked In
+          li
+            a.social__button(href='#')
+              span.visually-hidden Youtube
+          li
+            a.social__button(href='#')
+              span.visually-hidden Google plus
+          li
+            a.social__button(href='#')
+              span.visually-hidden Pinterest
+          li
+            a.social__button(href='#')
+              span.visually-hidden Instagram
+          li
+            a.social__button(href='#')
+              span.visually-hidden Email
