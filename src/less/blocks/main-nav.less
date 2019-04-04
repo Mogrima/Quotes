@@ -1,0 +1,37 @@
+.main-nav__toggle {
+    font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: @text-light;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgba(13, 16, 19, 0.96);
+
+    li {
+        list-style: none;
+    }
+}
+
+.main-nav__link {
+    font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: @fz-menu;
+    line-height: @lh-menu;
+    color: @text-menu;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: @text-light;
+        border-bottom: 2px solid @text-light;
+    }
+}
