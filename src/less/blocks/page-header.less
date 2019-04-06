@@ -1,8 +1,12 @@
 .page-header {
+    width: 1600px;
+    margin: 0 auto;
     background-color: @header;
 }
 
 .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
     width: 1400px;
     margin: 0 auto;
@@ -10,12 +14,19 @@
 }
 
 .page-header__logo {
+    width: 200px;
+    padding: 25px 0;
     font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: @text-light;
     background-color: #000000;
+    text-align: center;
     letter-spacing: 4px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.page-header__nav {
+    align-self: center;
 }
