@@ -6,16 +6,31 @@
     box-sizing: border-box;
     width: 1400px;
     margin: 0 auto;
-    padding: 0 100px;
+    // padding: 0 100px;
 }
 
 .prints__list {
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
+.prints__block-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 742px;
+}
+
 .prints__item {
     list-style: none;
+    &--first {
+        flex-grow: 1;
+    }
+    &--second,
+    &--third {
+        width: 330px;
+    }
 }
 
 .prints__slogan {
