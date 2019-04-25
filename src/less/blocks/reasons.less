@@ -2,7 +2,8 @@
     box-sizing: border-box;
     width: 1400px;
     margin: 0 auto;
-    padding: 0 100px;
+    // padding: 0 100px;
+    padding-top: 125px;
 }
 
 .reasons__list {
@@ -10,6 +11,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    padding-top: 120px;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-size: @fz-text;
     line-height: @lh-text;
@@ -18,10 +20,15 @@
 .reasons__item {
     width: 50%;
     list-style: none;
+    border: 1px solid #dcdcdc;
+    &:nth-child(odd):not(:last-child) {
+        border-right: none;
+    }
 }
 
 .reasons__subtitle {
     margin: 0;
+    padding-top: 45px;
     font-weight: bold;
     font-size: @fz-subtitle;
     line-height: @lh-subtitle;
