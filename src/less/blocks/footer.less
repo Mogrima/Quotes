@@ -9,12 +9,13 @@
     box-sizing: border-box;
     width: 1400px;
     margin: 0 auto;
-    padding: 0 100px;
+    // padding: 0 100px;
 }
 
 .footer__top {
     display: flex;
     justify-content: space-between;
+    padding-top: 120px;
 }
 
 .footer__browse {
@@ -22,7 +23,7 @@
 }
 
 .footer__shop {
-    width: 190px;
+    width: 195px;
 }
 
 .footer__contact {
@@ -35,16 +36,27 @@
 
 .footer__title {
     margin: 0;
+    margin-bottom: 40px;
     font-weight: bold;
     font-size: 20px;
     line-height: 34px;
+    &--subscribe {
+        margin-bottom: 20px;
+    }
+    &--contact {
+        margin-bottom: 33px;
+    }
 }
 
 .footer__menu-list {
     margin: 0;
     padding: 0;
     li {
+        margin-bottom: 10px;
         list-style: none;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -55,6 +67,8 @@
 }
 
 .footer__bottom {
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-color: @bg-prints;
 }
 
