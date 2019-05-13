@@ -4,9 +4,9 @@
     letter-spacing: 2px;
 }
 
-.footer__top 
-// .footer__bottom 
-{
+.footer__top // .footer__bottom 
+
+    {
     box-sizing: border-box;
     // width: 1400px;
     margin: 0 auto;
@@ -28,7 +28,7 @@
 
 .footer__shop {
     // width: 195px;
-    width: 12%;
+    width: 15%;
 }
 
 .footer__contact {
@@ -47,9 +47,11 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 34px;
+
     &--subscribe {
         margin-bottom: 20px;
     }
+
     &--contact {
         margin-bottom: 33px;
     }
@@ -58,9 +60,11 @@
 .footer__menu-list {
     margin: 0;
     padding: 0;
+
     li {
         margin-bottom: 10px;
         list-style: none;
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -86,4 +90,13 @@
 
 .footer__copyright {
     margin: 0;
+}
+
+@media(min-width: @base-width) {
+    .footer__top,
+    .footer__bottom {
+        width: 1600px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
