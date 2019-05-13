@@ -1,6 +1,6 @@
 .page-header {
     position: relative;
-    width: 1600px;
+    // width: 1600px;
     margin: 0 auto;
     background-color: @header;
 }
@@ -9,9 +9,11 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 1400px;
+    // width: 1400px;
     margin: 0 auto;
-    padding: 0 100px;
+    // padding: 0 100px;
+    padding-left: @set;
+    padding-right: @set;
     padding-top: 50px;
 }
 
@@ -31,4 +33,14 @@
 
 .page-header__nav {
     align-self: baseline;
+}
+
+@media(min-width: @base-width) {
+    .page-header {
+        width: 1600px;
+    }
+    .page-header__wrapper {
+        width: 1400px;
+        // padding: 0 100px;
+    }
 }
