@@ -15,8 +15,9 @@
 .people__quotes-block {
     width: 50%;
     margin: 0;
-    padding-left: 100px;
-    padding-right: 195px;
+    padding-left: @set;
+    // padding-right: 195px;
+    padding-right: @set;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
@@ -26,7 +27,7 @@
     margin: 0;
     margin-bottom: 40px;
     padding-top: 130px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .people__quotes-author {
@@ -35,4 +36,12 @@
 
 .people__img {
     width: 50%;
+    object-fit: cover;
+}
+
+@media(min-width: @base-width) {
+    .people__quotes-block {
+        padding-left: 100px;
+        padding-right: 195px;
+    }
 }
