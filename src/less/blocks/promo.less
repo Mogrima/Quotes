@@ -14,7 +14,8 @@
 
 .promo__text {
     margin: 0;
-    margin-left: 704px;
+    // 704 / 16 (1 % от 1600px)
+    margin-left: 44%;
     padding-top: 338px;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -25,4 +26,10 @@
         font-size: 220px;
         text-transform: uppercase;
     } 
+}
+
+@media(min-width: @base-width) {
+    .promo__text {
+        margin-left: 704px;
+    }
 }
