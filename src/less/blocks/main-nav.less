@@ -3,6 +3,7 @@
 }
 
 .main-nav__toggle {
+    position: relative;
     font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -11,6 +12,7 @@
     background-color: transparent;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 
     &--close {
         display: none;
@@ -34,6 +36,28 @@
         }
         &::after {
             transform: rotate(-45deg);
+        }
+    }
+
+    &--open {
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+
+            width: 50px;
+            height: 4px;
+
+            background-color: @text-light;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            right: 7px;
+            bottom: -9px;
         }
     }
 }
