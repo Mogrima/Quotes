@@ -1,8 +1,10 @@
 .reasons__wrapper {
     box-sizing: border-box;
-    width: 1400px;
+    // width: 1400px;
     margin: 0 auto;
     // padding: 0 100px;
+    padding-left: @set;
+    padding-right: @set;
     padding-top: 125px;
     margin-bottom: 140px;
 }
@@ -54,4 +56,11 @@
 
 .reasons__button {
     margin: 0 auto;
+}
+
+@media(min-width: @base-width) {
+    .reasons__wrapper {
+        width: 1600px;
+        // padding: 0 100px;
+    }
 }
