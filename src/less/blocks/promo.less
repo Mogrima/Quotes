@@ -1,14 +1,23 @@
 .promo {
     margin-top: -137px;
     height: 1000px;
-    background-image: url("../../img/header-slider.jpg");
+    
 }
 .promo__list {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+// Если не будет работать js, то показываться будет первый слайд
+
+.slider__list--no-js .promo__item:not(:first-child) {
+    display: none;
+}
+
 .promo__item {
+    height: 100%;
+    background-image: url("../../img/header-slider.jpg");
     list-style: none;
 }
 
@@ -30,7 +39,8 @@
 
 .promo__dots {
     position: relative;
-    bottom: -200px;
+    z-index: 1;
+    bottom: 114px;
     left: 560px;
     display: flex;
     justify-content: space-between;
