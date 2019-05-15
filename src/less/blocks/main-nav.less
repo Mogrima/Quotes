@@ -1,7 +1,3 @@
-.main-nav {
-   
-}
-
 .main-nav__toggle {
     position: relative;
     font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
@@ -13,7 +9,6 @@
     border: none;
     text-transform: uppercase;
     cursor: pointer;
-
     &--close {
         display: none;
         position: absolute;
@@ -96,3 +91,17 @@
         border-bottom: 2px solid @text-light;
     }
 }
+
+.fade {
+
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
