@@ -28,8 +28,34 @@
     } 
 }
 
+.promo__dots {
+    position: relative;
+    bottom: -200px;
+    left: 560px;
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.promo__dot {
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    &--active {
+        background-color: #ffffff;
+    }
+}
+
 @media(min-width: @base-width) {
     .promo__text {
         margin-left: 704px;
+    }
+
+    .promo__dots {
+        left: 713px;
     }
 }
