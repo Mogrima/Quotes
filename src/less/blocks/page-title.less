@@ -12,7 +12,20 @@
 }
 
 .page-title__text {
-    margin: 0;
+    position: relative;
+    width: 645px;
+    margin: 0 auto;
     margin-bottom: 95px;
     font-weight: 600;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -45px;
+        right: 277px;
+
+        width: 80px;
+        height: 2px;
+        background-color: @text-dark;
+    }
 }
