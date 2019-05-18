@@ -4,45 +4,59 @@ let slideIndex = 1,
     dotsWrap = document.querySelector('.slider__dots'),
     dots = document.querySelectorAll('.slider__dot');
 
+    // People Slider
+    let slidesPeople = document.querySelectorAll('.PeopleSlider__item'),
+    dotsWrapPeople = document.querySelector('.PeopleSlider_dots'),
+    dotsPeople = document.querySelectorAll('.PeopleSlider__dot');
+
     // Удаляем класс no-js
     slidesWrapp.classList.remove('slider__list--no-js');
 
-showSlides(slideIndex);
+let promoWidth = slides.length;
+let peopleWidth = slidesPeople.length;
 
-function showSlides(n) {
+function showSlides(n, lgth, slds, dts, dtsClsAct) {
 
     // Если дошли до последнего слайда - вернуться на первый
-    if (n > slides.length) {
+    if (n > lgth) {
         slideIndex = 1;
     }
     // Чтобы попасть с первого на последний, листая назад
     if (n < 1) {
-        slideIndex = slides.length;
+        slideIndex = lgth;
     }
 
-    slides.forEach((item) => item.style.display = 'none');
-    // for (let i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = 'none';
-    // }
+    // slides.forEach((item) => item.style.display = 'none');
+    for (let i = 0; i < lgth; i++) {
+        slds[i].style.display = 'none';
+    }
 
-    dots.forEach((item) => item.classList.remove('promo__dot--active'));
+    dts.forEach((item) => item.classList.remove(dtsClsAct));
 
-    slides[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].classList.add('promo__dot--active');
+    slds[slideIndex - 1].style.display = 'block';
+    dts[slideIndex - 1].classList.add(dtsClsAct);
 }
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+showSlides(slideIndex, promoWidth, slides, dots, "promo__dot--active");
+showSlides(slideIndex, peopleWidth, slidesPeople, dotsPeople, "people__dot--active");
+
+function plusSlides(n, lgth, slds, dts, dtsClsAct) {
+    showSlides((slideIndex += n), lgth, slds, dts, dtsClsAct);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(n, lgth, slds, dts, dtsClsAct) {
+    showSlides((slideIndex = n), lgth, slds, dts, dtsClsAct);
 }
 
-dotsWrap.addEventListener('click', function (event) {
-    for (let i = 0; i < dots.length + 1; i++) {
-        if (event.target.classList.contains('slider__dot') && event.target == dots[i - 1]) {
-            currentSlide(i);
+function dotsClick(dtsWrp, dts, lgth, slds, dtsClsAct, dtsClsContain) {
+    dtsWrp.addEventListener('click', function (event) {
+        for (let i = 0; i < dts.length + 1; i++) {
+            if (event.target.classList.contains(dtsClsContain) && event.target == dts[i - 1]) {
+                currentSlide(i, lgth, slds, dts, dtsClsAct);
+            }
         }
-    }
-});
+    });
+}
+
+dotsClick(dotsWrap, dots, promoWidth, slides, "promo__dot--active", "slider__dot");
+dotsClick(dotsWrapPeople, dotsPeople, peopleWidth, slidesPeople, "people__dot--active", "PeopleSlider__dot");
