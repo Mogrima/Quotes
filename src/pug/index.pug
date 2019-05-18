@@ -32,23 +32,23 @@ html(lang='en')
               a.main-nav__link(href='#') Contact us
       .promo.slider
         ul.promo__list.slider__list.slider__list--no-js
-          li.promo__item.slider__item.fade-slide
+          li.promo__item.slider__item
             p.promo__text
               span Smile 
               br
               | it costs you nothing
           
-            <li class="promo__item slider__item fade-slide">
-            <p class="promo__text"><span>Smile </span>it costs you nothing</p>
+            <li class="promo__item slider__item 2">
+            <p class="promo__text"><span>Smile </span><br>it costs you nothing</p>
             </li>
-            <li class="promo__item slider__item fade-slide">
-            <p class="promo__text"><span>Smile </span>it costs you nothing</p>
+            <li class="promo__item slider__item 3 ">
+            <p class="promo__text"><span>Smile </span><br>it costs you nothing</p>
             </li>
-            <li class="promo__item slider__item fade-slide">
-            <p class="promo__text"><span>Smile </span>it costs you nothing</p>
+            <li class="promo__item slider__item 4">
+            <p class="promo__text"><span>Smile </span><br>it costs you nothing</p>
             </li>
-            <li class="promo__item slider__item fade-slide">
-            <p class="promo__text"><span>Smile </span>it costs you nothing</p>
+            <li class="promo__item slider__item 5">
+            <p class="promo__text"><span>Smile </span><br>it costs you nothing</p>
             </li>
         <div class="promo__dots slider__dots">
           <button class="promo__dot slider__dot promo__dot--active"><span class="visually-hidden">slide 1</span></button>
@@ -83,11 +83,36 @@ html(lang='en')
       section.people
         h2.visually-hidden Sayings of famous people
         ul.people__list
-          li.people__item
-            blockquote.people__quotes-block
-              p.people__quotes-text I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.
-              span.people__quotes-author Audrey Hepburn
-            img(src="../img/people-slider.jpg", width="800" height="650" alt="people").people__img
+          li.people__item.PeopleSlider__item
+            .people__wrapp
+              blockquote.people__quotes-block
+                p.people__quotes-text I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.
+                span.people__quotes-author Audrey Hepburn
+              img(src="../img/people-slider.jpg", width="800" height="650" alt="people").people__img
+          li.people__item.PeopleSlider__item
+            .people__wrapp
+              blockquote.people__quotes-block
+                p.people__quotes-text I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.
+                span.people__quotes-author Audrey Hepburn
+              img(src="../img/people-slider.jpg", width="800" height="650" alt="people").people__img
+          li.people__item.PeopleSlider__item
+            .people__wrapp
+              blockquote.people__quotes-block
+                p.people__quotes-text I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.
+                span.people__quotes-author Audrey Hepburn
+              img(src="../img/people-slider.jpg", width="800" height="650" alt="people").people__img
+          li.people__item.PeopleSlider__item
+            .people__wrapp
+              blockquote.people__quotes-block
+                p.people__quotes-text I love people who make me laugh. I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills. It's probably the most important thing in a person.
+                span.people__quotes-author Audrey Hepburn
+              img(src="../img/people-slider.jpg", width="800" height="650" alt="people").people__img
+        <div class="promo__dots PeopleSlider_dots">
+          <button class="promo__dot PeopleSlider__dot"><span class="visually-hidden">slide 1</span></button>
+          <button class="promo__dot PeopleSlider__dot"><span class="visually-hidden">slide 2</span></button>
+          <button class="promo__dot PeopleSlider__dot"><span class="visually-hidden">slide 3</span></button>
+          <button class="promo__dot PeopleSlider__dot"><span class="visually-hidden">slide 4</span></button>
+        </div>
       section.reasons
         .reasons__wrapper
           h2.section-title Reasons to be happy
