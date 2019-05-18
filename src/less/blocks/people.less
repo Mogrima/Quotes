@@ -1,5 +1,4 @@
 .people {
-    background-color: @bg-pink;
 }
 
 .people__list {
@@ -8,8 +7,21 @@
 }
 
 .people__item {
-    display: flex;
     list-style: none;
+    background-color: @bg-pink;
+    &:nth-child(2) {
+        background-color: rosybrown;
+    }
+    &:nth-child(3) {
+        background-color: lemonchiffon;
+    }
+    &:nth-child(4) {
+        background-color: darkgrey;
+    }
+}
+
+.people__wrapp {
+    display: flex;
 }
 
 .people__quotes-block {
