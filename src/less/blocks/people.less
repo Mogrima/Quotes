@@ -1,4 +1,5 @@
 .people {
+    position: relative;
 }
 
 .people__list {
@@ -38,7 +39,8 @@
 .people__quotes-text {
     margin: 0;
     margin-bottom: 40px;
-    padding-top: 130px;
+    // padding-top: 130px;
+    padding-top: 100px;
     font-weight: bold;
 }
 
@@ -51,9 +53,36 @@
     object-fit: cover;
 }
 
+.people_dots {
+    position: relative;
+    left: @set;
+    top: -65px;
+    display: flex;
+    justify-content: space-between;
+    width: 94px;
+}
+
+.people__dot {
+    width: 10px;
+    height: 13px;
+    background-color: transparent;
+    border: 2px solid #696767;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--active {
+        background-color: #696767;
+    }
+}
+
 @media(min-width: @base-width) {
     .people__quotes-block {
         padding-left: 100px;
         padding-right: 195px;
+    }
+
+    .people_dots {
+        left: 100px;
+        top: -120px;
     }
 }
