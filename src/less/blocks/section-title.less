@@ -1,7 +1,19 @@
 .section-title {
+    position: relative;
     margin: 0;
     font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: @fz-title;
     line-height: @lh-title;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -42px;
+        left: 0;
+
+        width: 80px;
+        height: 2px;
+        background-color: @text-dark;
+    }
 }
