@@ -5,9 +5,9 @@ let slideIndex = 1,
     dots = document.querySelectorAll('.slider__dot');
 
     // People Slider
-    let slidesPeople = document.querySelectorAll('.PeopleSlider__item'),
-    dotsWrapPeople = document.querySelector('.PeopleSlider_dots'),
-    dotsPeople = document.querySelectorAll('.PeopleSlider__dot');
+    let slidesPeople = document.querySelectorAll('.people__item'),
+    dotsWrapPeople = document.querySelector('.people_dots'),
+    dotsPeople = document.querySelectorAll('.people__dot');
 
     // Удаляем класс no-js
     slidesWrapp.classList.remove('slider__list--no-js');
@@ -59,4 +59,4 @@ function dotsClick(dtsWrp, dts, lgth, slds, dtsClsAct, dtsClsContain) {
 }
 
 dotsClick(dotsWrap, dots, promoWidth, slides, "promo__dot--active", "slider__dot");
-dotsClick(dotsWrapPeople, dotsPeople, peopleWidth, slidesPeople, "people__dot--active", "PeopleSlider__dot");
+dotsClick(dotsWrapPeople, dotsPeople, peopleWidth, slidesPeople, "people__dot--active", "people__dot");
