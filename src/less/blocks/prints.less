@@ -15,17 +15,23 @@
 
 .prints__list {
     display: flex;
-    margin: 0;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
     margin-bottom: 100px;
     padding: 0;
     padding-top: 120px;
+}
+
+.prints__block-left {
+    width: 386px; // 560 * 960 / 1600 + 50
 }
 
 .prints__block-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 742px;
+    width: 496px; // 742 * 960 / 1600 + 50
 }
 
 .prints__item {
@@ -33,11 +39,19 @@
     list-style: none;
     &--first {
         flex-grow: 1;
+        height: 253px;
+        margin-bottom: 45px;
     }
     &--second,
     &--third {
-        width: 330px;
+        width: 223px; // 360 * 960 / 1600 + 25
+        height: 235px;
     }
+}
+
+.prints__poster {
+    display: block;
+    // height: 100%;
 }
 
 .prints__slogan {
@@ -46,13 +60,21 @@
 }
 
 .prints__slogan--gentle {
+    top: 135px;
+    left: 50px;
     font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 45px;
+    line-height: 65px;
     color: @text-light;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .prints__slogan--muse {
+    top: 22%;
+    left: 9%;
+    width: 315px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 36px;
@@ -61,21 +83,34 @@
 }
 
 .prints__author {
+    display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
     font-size: 20px;
+    font-style: normal;
 }
 
 .prints__slogan--work {
+    top: 15px;
+    left: 32px;
+    width: 165px;
+    margin-top: auto;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
     font-size: 30px;
     color: @text-dark;
+    text-align: center;
 }
 
 .prints__slogan--golden {
+    top: 84px;
+    left: 26px;
+    width: 180px;
     font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     span {
         font-weight: 900;
         font-size: 37px;
@@ -89,5 +124,46 @@
 @media(min-width: @base-width) {
     .prints__wrapper {
         width: 1600px;
+    }
+
+    .prints__list {
+        width: auto;
+    }
+
+    .prints__block-left {
+        width: 560px;
+    }
+
+    .prints__block-right {
+        width: 742px;
+    }
+
+    .prints__item {
+        &--first {
+        height: 370px;
+        margin-bottom: 50px;
+        }
+        &--second,
+        &--third {
+            width: 330px;
+            height: 340px;
+        }
+    }
+
+    .prints__slogan--gentle {
+        top: 195px;
+        left: 75px;
+        font-size: 65px;
+        line-height: 90px;
+    }
+
+    .prints__slogan--work {
+        top: 35px;
+        left: 84px;
+    }
+
+    .prints__slogan--golden {
+        top: 173px;
+        left: 86px;
     }
 }
