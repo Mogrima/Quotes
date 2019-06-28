@@ -15,6 +15,14 @@
     text-transform: uppercase;
     cursor: pointer;
 
+    &:hover {
+        background-color: lighten(@text-dark, 80%);
+    }
+
+    &:active {
+        background-color: lighten(@text-dark, 60%);
+    }
+
     &--big {
         width: 310px;
     }
