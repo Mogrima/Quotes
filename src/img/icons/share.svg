@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="30" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="30" height="20" style="color: white;">
   <g data-name="Слой 2">
-    <path d="M30 8.5L19.5 0v5.09C4.5 5.09 0 20 0 20s8.66-10.54 19.5-8.79V17z" fill-rule="evenodd" data-name="Shape 1"/>
+    <path fill="#ffffff" d="M30 8.5L19.5 0v5.09C4.5 5.09 0 20 0 20s8.66-10.54 19.5-8.79V17z" fill-rule="evenodd" data-name="Shape 1"/>
   </g>
 </svg>
